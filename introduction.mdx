@@ -9,34 +9,50 @@ sidebar_position: 1
 ## Índice
 
 1. [Introducción](#introducción)
-2. [Acceso y Autenticación](#acceso-y-autenticación)
-   - [Ingreso al Sistema](#ingreso-al-sistema)
-   - [Registro y Asignación de Roles](#registro-y-asignación-de-roles)
-3. [Gestión de Inventario](#gestión-de-inventario)
-   - [Visualización del Inventario](#visualización-del-inventario)
-   - [Modificación y Registro de Cambios](#modificación-y-registro-de-cambios)
-   - [Ingreso de Stock mediante Guías de Despacho](#ingreso-de-stock-mediante-guías-de-despacho)
-4. [Carga de Insumos](#carga-de-insumos)
-5. [Reposiciones](#reposiciones)
-6. [Gestión de Maestros](#gestión-de-maestros)
-   - [Maestro de Productos](#maestro-de-productos)
-   - [Maestro de CKUs](#maestro-de-ckus)
-   - [Gestión de Proveedores](#gestión-de-proveedores)
-   - [Gestión de Profesionales y Clientes](#gestión-de-profesionales-y-clientes)
-   - [Categorías y Licitaciones](#categorías-y-licitaciones)
-7. [Reportes y Auditoría](#reportes-y-auditoría)
-8. [Dashboard y Panel de Control](#dashboard-y-panel-de-control)
-9. [Conclusión](#conclusión)
 
----
+2. [Acceso y Autenticación](#acceso-y-autenticación)
+
+   * [Ingreso al Sistema](#ingreso-al-sistema)
+
+   * [Registro y Asignación de Roles](#registro-y-asignación-de-roles)
+
+3. [Gestión de Inventario](#gestión-de-inventario)
+
+   * [Visualización del Inventario](#visualización-del-inventario)
+
+   * [Modificación y Registro de Cambios](#modificación-y-registro-de-cambios)
+
+   * [Ingreso de Stock mediante Guías de Despacho](#ingreso-de-stock-mediante-guías-de-despacho)
+
+4. [Carga de Insumos](#carga-de-insumos)
+
+5. [Reposiciones](#reposiciones)
+
+6. [Gestión de Maestros](#gestión-de-maestros)
+
+   * [Maestro de Productos](#maestro-de-productos)
+
+   * [Maestro de CKUs](#maestro-de-ckus)
+
+   * [Gestión de Proveedores](#gestión-de-proveedores)
+
+   * [Gestión de Profesionales y Clientes](#gestión-de-profesionales-y-clientes)
+
+   * [Categorías y Licitaciones](#categorías-y-licitaciones)
+
+7. [Reportes y Auditoría](#reportes-y-auditoría)
+
+8. [Dashboard y Panel de Control](#dashboard-y-panel-de-control)
+
+***
 
 ## 1. Introducción
 
 El sistema **MED360** es una solución integral diseñada para gestionar de manera segura y eficiente los procesos operativos de inventario, cargas de insumos, reposiciones y auditorías. Implementado para VIA Inversiones y respaldado por AWS, este sistema garantiza altos estándares de seguridad y adaptabilidad para distintos entornos hospitalarios o empresariales.
 
-**[Insertar imagen: Vista general del sistema MED360]**
+**\[Insertar imagen: Vista general del sistema MED360]**
 
----
+***
 
 ## 2. Acceso y Autenticación
 
@@ -44,24 +60,52 @@ El sistema **MED360** es una solución integral diseñada para gestionar de mane
 
 El acceso a **MED360** se realiza a través de métodos de autenticación seguros:
 
-- **Autenticación con Usuario y Contraseña:**  
-  Los usuarios deben ingresar sus credenciales asignadas para acceder al sistema.  
-  **[Insertar imagen: Pantalla de login con usuario y contraseña]**
+* **Autenticación con Usuario y Contraseña:**
 
-- **Inicio de Sesión con Cuenta Google:**  
-  Empresas con acceso a Gmail pueden ingresar de manera directa y simplificada mediante su cuenta Google.  
-  **[Insertar imagen: Opción de inicio de sesión con Google]**
+
+
+
+  Los usuarios deben ingresar sus credenciales asignadas para acceder al sistema.
+
+
+
+
+  **\[Insertar imagen: Pantalla de login con usuario y contraseña]**
+
+* **Inicio de Sesión con Cuenta Google:**
+
+
+
+
+  Empresas con acceso a Gmail pueden ingresar de manera directa y simplificada mediante su cuenta Google.
+
+
+
+
+  **\[Insertar imagen: Opción de inicio de sesión con Google]**
 
 ### Registro y Asignación de Roles
 
-- **Proceso de Registro:**  
+* **Proceso de Registro:**
+
+
+
+
   Se solicitan datos básicos como nombre, correo y contraseña. En el caso de utilizar Google, se autentica automáticamente la cuenta.
 
-- **Asignación de Roles:**  
-  Tras el registro, se generan roles específicos (por ejemplo, administrador, usuario de pabellón) que determinan el nivel de acceso y las funciones disponibles en el sistema.  
-  **[Insertar imagen: Proceso de asignación de roles y perfil de usuario]**
+* **Asignación de Roles:**
 
----
+
+
+
+  Tras el registro, se generan roles específicos (por ejemplo, administrador, usuario de pabellón) que determinan el nivel de acceso y las funciones disponibles en el sistema.
+
+
+
+
+  **\[Insertar imagen: Proceso de asignación de roles y perfil de usuario]**
+
+***
 
 ## 3. Gestión de Inventario
 
@@ -69,180 +113,302 @@ El acceso a **MED360** se realiza a través de métodos de autenticación seguro
 
 La pantalla principal de inventario proporciona una vista completa del estado actual del stock:
 
-- **Elementos Clave:**
-  - Stock actual
-  - Lead time (tiempo estimado de reposición)
-  - Stock mínimo de seguridad
-  - Fecha de reposición
+* **Elementos Clave:**
 
-**[Insertar imagen: Pantalla principal de inventario con indicadores clave]**
+  * Stock actual
+
+  * Lead time (tiempo estimado de reposición)
+
+  * Stock mínimo de seguridad
+
+  * Fecha de reposición
+
+**\[Insertar imagen: Pantalla principal de inventario con indicadores clave]**
 
 ### Modificación y Registro de Cambios
 
-- **Proceso de Retiro de Productos:**  
+* **Proceso de Retiro de Productos:**
+
+
+
+
   Cuando se retira un producto (por ejemplo, por requerimiento del proveedor), se solicita al usuario que indique la razón (como “Retiro por proveedor”).
 
-- **Registro Detallado:**  
-  Cada modificación se registra en el sistema (logs) para facilitar la trazabilidad y auditoría.  
-  **[Insertar imagen: Ejemplo de log o registro de cambios en el inventario]**
+* **Registro Detallado:**
+
+
+
+
+  Cada modificación se registra en el sistema (logs) para facilitar la trazabilidad y auditoría.
+
+
+
+
+  **\[Insertar imagen: Ejemplo de log o registro de cambios en el inventario]**
 
 ### Ingreso de Stock mediante Guías de Despacho
 
-- **Creación de Guías de Despacho:**  
+* **Creación de Guías de Despacho:**
+
+
+
+
   Las guías permiten registrar la llegada de nuevos productos, replicando el proceso tradicional en papel.
 
-- **Métodos de Ingreso:**
-  - **Uso de Pistola Lectora:**  
+* **Métodos de Ingreso:**
+
+  * **Uso de Pistola Lectora:**
+
+
+
+
     Escaneo directo del código del producto para ingreso automático.
-  - **Búsqueda Manual:**  
+
+  * **Búsqueda Manual:**
+
+
+
+
     En caso de no disponer del escáner, se puede buscar el producto mediante nombre o SKU.
 
-- **Validación y Guardado:**  
-  El sistema valida la información (SKU, lote, UPN) y actualiza el inventario en tiempo real.  
-  **[Insertar imagen: Pantalla de ingreso de productos mediante guía de despacho]**
+* **Validación y Guardado:**
 
----
+
+
+
+  El sistema valida la información (SKU, lote, UPN) y actualiza el inventario en tiempo real.
+
+
+
+
+  **\[Insertar imagen: Pantalla de ingreso de productos mediante guía de despacho]**
+
+***
 
 ## 4. Carga de Insumos
 
 La sección de carga de insumos permite registrar de manera detallada cada procedimiento en el que se utilizan productos o medicamentos.
 
-- **Datos Requeridos:**
-  - Fecha del procedimiento
-  - Nombre del paciente
-  - Área o subruta del procedimiento
-  - Médico tratante
-  - Prestaciones asociadas (configurables según el servicio, por ejemplo, Modinamia)
+* **Datos Requeridos:**
 
-- **Proceso de Registro:**  
-  Se puede ingresar el producto mediante escaneo o búsqueda manual, y asociarlo automáticamente al paciente.  
-  **[Insertar imagen: Formulario de carga de insumos con campos detallados]**
+  * Fecha del procedimiento
 
-- **Generación de Reportes:**  
-  Una vez guardado el registro, se genera un reporte detallado de costos y consumo de insumo para su posterior análisis.  
-  **[Insertar imagen: Ejemplo de reporte de carga de insumo]**
+  * Nombre del paciente
 
----
+  * Área o subruta del procedimiento
+
+  * Médico tratante
+
+  * Prestaciones asociadas (configurables según el servicio, por ejemplo, Modinamia)
+
+* **Proceso de Registro:**
+
+
+
+
+  Se puede ingresar el producto mediante escaneo o búsqueda manual, y asociarlo automáticamente al paciente.
+
+
+
+
+  **\[Insertar imagen: Formulario de carga de insumos con campos detallados]**
+
+* **Generación de Reportes:**
+
+
+
+
+  Una vez guardado el registro, se genera un reporte detallado de costos y consumo de insumo para su posterior análisis.
+
+
+
+
+  **\[Insertar imagen: Ejemplo de reporte de carga de insumo]**
+
+***
 
 ## 5. Reposiciones
 
 La funcionalidad de reposiciones permite gestionar la solicitud y reposición de productos cuando se alcanza el stock mínimo.
 
-- **Visualización de Productos a Reponer:**  
+* **Visualización de Productos a Reponer:**
+
+
+
+
   El sistema lista los productos que requieren reposición, destacando aquellos críticos.
 
-- **Solicitud al Proveedor:**  
+* **Solicitud al Proveedor:**
+
+
+
+
   Se envía una notificación o solicitud directa al proveedor para la reposición del producto.
 
-**[Insertar imagen: Pantalla de reposiciones con lista de productos pendientes]**
+**\[Insertar imagen: Pantalla de reposiciones con lista de productos pendientes]**
 
----
+***
 
 ## 6. Gestión de Maestros
 
 ### Maestro de Productos
 
-- **Creación y Edición de Productos:**  
+* **Creación y Edición de Productos:**
+
+
+
+
   Permite ingresar datos fundamentales como el nombre del insumo, grupo (licitación, consignado), medidas, costo neto y otros identificadores (CFN, UPN).
 
-**[Insertar imagen: Formulario de ingreso de un nuevo producto]**
+**\[Insertar imagen: Formulario de ingreso de un nuevo producto]**
 
 ### Maestro de CKUs
 
-- **Generación de CKUs:**  
+* **Generación de CKUs:**
+
+
+
+
   Para productos que requieren seguimiento especial, se pueden generar CKUs (Códigos de Kilo Unidad) que facilitan la gestión y el control.
 
-- **Impresión y Exportación:**  
-  Los CKUs pueden descargarse en formato imprimible para su uso físico.  
-  **[Insertar imagen: Ejemplo de CKU generado y descargado]**
+* **Impresión y Exportación:**
+
+
+
+
+  Los CKUs pueden descargarse en formato imprimible para su uso físico.
+
+
+
+
+  **\[Insertar imagen: Ejemplo de CKU generado y descargado]**
 
 ### Gestión de Proveedores
 
-- **Registro de Proveedores:**  
+* **Registro de Proveedores:**
+
+
+
+
   Se ingresan datos comerciales y de contacto, además del tiempo estimado de entrega (lifetime).
 
-**[Insertar imagen: Pantalla de gestión de proveedores]**
+**\[Insertar imagen: Pantalla de gestión de proveedores]**
 
 ### Gestión de Profesionales y Clientes
 
-- **Profesionales:**  
+* **Profesionales:**
+
+
+
+
   Registro de roles y datos (médicos, enfermeros, etc.) para su asignación en la carga de insumos.
 
-- **Clientes:**  
+* **Clientes:**
+
+
+
+
   Configuración de facturación según el establecimiento (hospital, pabellón, etc.).
 
-**[Insertar imagen: Ejemplo de perfiles de profesionales y clientes]**
+**\[Insertar imagen: Ejemplo de perfiles de profesionales y clientes]**
 
 ### Categorías y Licitaciones
 
-- **Configuración de Insumos:**  
+* **Configuración de Insumos:**
+
+
+
+
   Se asigna el nombre, categoría y precios de venta a cada insumo, permitiendo una clasificación precisa para la facturación y gestión interna.
 
-**[Insertar imagen: Pantalla de categorías o licitaciones]**
+**\[Insertar imagen: Pantalla de categorías o licitaciones]**
 
----
+***
 
 ## 7. Reportes y Auditoría
 
 ### Registro y Logs del Inventario
 
-- **Historial de Modificaciones:**  
+* **Historial de Modificaciones:**
+
+
+
+
   Se almacena información detallada sobre cada cambio en el inventario, incluyendo quién realizó la modificación y cuándo.
 
-**[Insertar imagen: Ejemplo de log o historial de cambios]**
+**\[Insertar imagen: Ejemplo de log o historial de cambios]**
 
 ### Exportación de Datos
 
-- **Exportar a Excel:**  
+* **Exportar a Excel:**
+
+
+
+
   La mayoría de las tablas e informes permiten exportar los datos a Excel para análisis externo y auditorías.
 
-**[Insertar imagen: Opción de exportación a Excel]**
+**\[Insertar imagen: Opción de exportación a Excel]**
 
 ### Reportes de Prestaciones y Productos Implantables
 
-- **Detalle del Procedimiento:**  
+* **Detalle del Procedimiento:**
+
+
+
+
   Reportes que incluyen datos del paciente, producto, lote, modelo, proveedor y la guía de despacho asociada.
 
-**[Insertar imagen: Ejemplo de reporte de prestaciones]**
+**\[Insertar imagen: Ejemplo de reporte de prestaciones]**
 
 ### Auditoría de Inventario
 
-- **Proceso de Auditoría:**  
+* **Proceso de Auditoría:**
+
+
+
+
   Se realiza un escaneo completo de los productos en un pabellón, comparando el inventario físico con el registrado en el sistema para identificar mermas o inconsistencias.
 
-- **Reporte de Auditoría:**  
+* **Reporte de Auditoría:**
+
+
+
+
   Al finalizar, se genera un informe detallado que incluye:
-  - Cantidad inicial y final del inventario
-  - Productos auditados y no encontrados
-  - Registro de mermas detectadas
 
-**[Insertar imagen: Pantalla o reporte de auditoría de inventario]**
+  * Cantidad inicial y final del inventario
 
----
+  * Productos auditados y no encontrados
+
+  * Registro de mermas detectadas
+
+**\[Insertar imagen: Pantalla o reporte de auditoría de inventario]**
+
+***
 
 ## 8. Dashboard y Panel de Control
 
 El dashboard centraliza la información operativa y analítica del sistema:
 
-- **Indicadores Clave:**
-  - Gestión de inventario
-  - Procedimientos realizados
-  - Rendimiento de proveedores
-  - Datos de profesionales y empleados
-  - Estadísticas de facturación y consumo
-- **Personalización:**  
+* **Indicadores Clave:**
+
+  * Gestión de inventario
+
+  * Procedimientos realizados
+
+  * Rendimiento de proveedores
+
+  * Datos de profesionales y empleados
+
+  * Estadísticas de facturación y consumo
+
+* **Personalización:**
+
+
+
+
   Los usuarios pueden configurar el panel de control para visualizar los indicadores que consideren más relevantes para sus tareas diarias.
 
-**[Insertar imagen: Ejemplo de dashboard con indicadores operativos]**
+**\[Insertar imagen: Ejemplo de dashboard con indicadores operativos]**
 
----
-
-## 9. Conclusión
-
-El sistema **MED360** está diseñado para ofrecer una solución completa y segura para la gestión de inventarios, cargas de insumos, reposiciones y auditorías. Su estructura modular permite adaptarse a las necesidades específicas de cada hospital o empresa, garantizando un control preciso y eficiente de los procesos operativos.
-
-Se recomienda revisar y actualizar este manual periódicamente para incorporar nuevas funcionalidades y mejoras del sistema.
-
-Para obtener soporte técnico o mayor información, comuníquese con el administrador del sistema o visite el centro de ayuda.
-
-**[Insertar imagen: Contacto y soporte técnico]**
+***
