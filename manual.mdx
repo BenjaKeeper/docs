@@ -14,32 +14,35 @@ import { Accordion, AccordionGroup } from '@mintlify/components';
 
 El sistema **MED360** es una solución integral diseñada para gestionar de manera segura y eficiente los procesos operativos de inventario, cargas de insumos, reposiciones y auditorías. Implementado para VIA Inversiones y respaldado por AWS, este sistema garantiza altos estándares de seguridad y adaptabilidad para distintos entornos hospitalarios o empresariales.
 
-**[Insertar imagen: Vista general del sistema MED360]**
+![Vista general del sistema MED360](https://ruta.de/tu/imagen_general.jpg)
 
 ---
 
 ## 2. Acceso y Autenticación
 
 <AccordionGroup>
-  <Accordion icon="login" title="Ingreso al Sistema">
+  <Accordion defaultOpen={true} icon="login" title="Ingreso al Sistema">
     El acceso a **MED360** se realiza a través de métodos de autenticación seguros:
     
     - **Autenticación con Usuario y Contraseña:**  
       Los usuarios deben ingresar sus credenciales asignadas para acceder al sistema.  
-      **[Insertar imagen: Pantalla de login con usuario y contraseña]**
+      
+      ![Pantalla de login con usuario y contraseña](https://ruta.de/tu/imagen_login.jpg)
     
     - **Inicio de Sesión con Cuenta Google:**  
       Empresas con acceso a Gmail pueden ingresar de manera directa y simplificada mediante su cuenta Google.  
-      **[Insertar imagen: Opción de inicio de sesión con Google]**
+      
+      ![Opción de inicio de sesión con Google](https://ruta.de/tu/imagen_google.jpg)
   </Accordion>
 
-  <Accordion icon="user" title="Registro y Asignación de Roles">
+  <Accordion defaultOpen={true} icon="user" title="Registro y Asignación de Roles">
     - **Proceso de Registro:**  
       Se solicitan datos básicos como nombre, correo y contraseña. En el caso de utilizar Google, se autentica automáticamente la cuenta.
       
     - **Asignación de Roles:**  
       Tras el registro, se generan roles específicos (por ejemplo, administrador, usuario de pabellón) que determinan el nivel de acceso y las funciones disponibles en el sistema.  
-      **[Insertar imagen: Proceso de asignación de roles y perfil de usuario]**
+      
+      ![Proceso de asignación de roles y perfil de usuario](https://ruta.de/tu/imagen_roles.jpg)
   </Accordion>
 </AccordionGroup>
 
@@ -48,7 +51,7 @@ El sistema **MED360** es una solución integral diseñada para gestionar de mane
 ## 3. Gestión de Inventario
 
 <AccordionGroup>
-  <Accordion icon="inventory" title="Visualización del Inventario">
+  <Accordion defaultOpen={true} icon="inventory" title="Visualización del Inventario">
     La pantalla principal de inventario proporciona una vista completa del estado actual del stock.
     
     **Elementos Clave:**
@@ -57,19 +60,20 @@ El sistema **MED360** es una solución integral diseñada para gestionar de mane
     - Stock mínimo de seguridad
     - Fecha de reposición
     
-    **[Insertar imagen: Pantalla principal de inventario con indicadores clave]**
+    ![Pantalla principal de inventario](https://ruta.de/tu/imagen_inventario.jpg)
   </Accordion>
 
-  <Accordion icon="edit" title="Modificación y Registro de Cambios">
+  <Accordion defaultOpen={true} icon="edit" title="Modificación y Registro de Cambios">
     - **Proceso de Retiro de Productos:**  
       Cuando se retira un producto (por ejemplo, por requerimiento del proveedor), se solicita al usuario que indique la razón (como “Retiro por proveedor”).
     
     - **Registro Detallado:**  
       Cada modificación se registra en el sistema (logs) para facilitar la trazabilidad y auditoría.  
-      **[Insertar imagen: Ejemplo de log o registro de cambios en el inventario]**
+      
+      ![Ejemplo de log o registro de cambios](https://ruta.de/tu/imagen_log.jpg)
   </Accordion>
 
-  <Accordion icon="upload" title="Ingreso de Stock mediante Guías de Despacho">
+  <Accordion defaultOpen={true} icon="upload" title="Ingreso de Stock mediante Guías de Despacho">
     - **Creación de Guías de Despacho:**  
       Las guías permiten registrar la llegada de nuevos productos, replicando el proceso tradicional en papel.
     
@@ -81,7 +85,8 @@ El sistema **MED360** es una solución integral diseñada para gestionar de mane
     
     - **Validación y Guardado:**  
       El sistema valida la información (SKU, lote, UPN) y actualiza el inventario en tiempo real.  
-      **[Insertar imagen: Pantalla de ingreso de productos mediante guía de despacho]**
+      
+      ![Ingreso de productos mediante guía de despacho](https://ruta.de/tu/imagen_guia.jpg)
   </Accordion>
 </AccordionGroup>
 
@@ -90,7 +95,7 @@ El sistema **MED360** es una solución integral diseñada para gestionar de mane
 ## 4. Carga de Insumos
 
 <AccordionGroup>
-  <Accordion icon="clipboard" title="Carga de Insumos">
+  <Accordion defaultOpen={true} icon="clipboard" title="Carga de Insumos">
     Esta sección permite registrar de manera detallada cada procedimiento en el que se utilizan productos o medicamentos.
     
     **Datos Requeridos:**
@@ -102,11 +107,13 @@ El sistema **MED360** es una solución integral diseñada para gestionar de mane
     
     **Proceso de Registro:**  
     Se puede ingresar el producto mediante escaneo o búsqueda manual, y asociarlo automáticamente al paciente.  
-    **[Insertar imagen: Formulario de carga de insumos con campos detallados]**
+      
+    ![Formulario de carga de insumos](https://ruta.de/tu/imagen_carga_insumos.jpg)
     
     **Generación de Reportes:**  
     Una vez guardado el registro, se genera un reporte detallado de costos y consumo de insumo para su posterior análisis.  
-    **[Insertar imagen: Ejemplo de reporte de carga de insumo]**
+      
+    ![Reporte de carga de insumo](https://ruta.de/tu/imagen_reporte.jpg)
   </Accordion>
 </AccordionGroup>
 
@@ -115,7 +122,7 @@ El sistema **MED360** es una solución integral diseñada para gestionar de mane
 ## 5. Reposiciones
 
 <AccordionGroup>
-  <Accordion icon="refresh" title="Reposiciones">
+  <Accordion defaultOpen={true} icon="refresh" title="Reposiciones">
     La funcionalidad de reposiciones permite gestionar la solicitud y reposición de productos cuando se alcanza el stock mínimo.
     
     - **Visualización de Productos a Reponer:**  
@@ -124,7 +131,7 @@ El sistema **MED360** es una solución integral diseñada para gestionar de mane
     - **Solicitud al Proveedor:**  
       Se envía una notificación o solicitud directa al proveedor para la reposición del producto.
       
-    **[Insertar imagen: Pantalla de reposiciones con lista de productos pendientes]**
+    ![Reposiciones](https://ruta.de/tu/imagen_reposiciones.jpg)
   </Accordion>
 </AccordionGroup>
 
@@ -133,40 +140,45 @@ El sistema **MED360** es una solución integral diseñada para gestionar de mane
 ## 6. Gestión de Maestros
 
 <AccordionGroup>
-  <Accordion icon="database" title="Maestro de Productos">
+  <Accordion defaultOpen={true} icon="database" title="Maestro de Productos">
     - **Creación y Edición de Productos:**  
       Permite ingresar datos fundamentales como el nombre del insumo, grupo (licitación, consignado), medidas, costo neto y otros identificadores (CFN, UPN).  
-      **[Insertar imagen: Formulario de ingreso de un nuevo producto]**
+      
+      ![Ingreso de un nuevo producto](https://ruta.de/tu/imagen_nuevo_producto.jpg)
   </Accordion>
 
-  <Accordion icon="barcode" title="Maestro de CKUs">
+  <Accordion defaultOpen={true} icon="barcode" title="Maestro de CKUs">
     - **Generación de CKUs:**  
       Para productos que requieren seguimiento especial, se pueden generar CKUs (Códigos de Kilo Unidad) que facilitan la gestión y el control.
     
     - **Impresión y Exportación:**  
       Los CKUs pueden descargarse en formato imprimible para su uso físico.  
-      **[Insertar imagen: Ejemplo de CKU generado y descargado]**
+      
+      ![Ejemplo de CKU generado](https://ruta.de/tu/imagen_cku.jpg)
   </Accordion>
 
-  <Accordion icon="user-group" title="Gestión de Proveedores">
+  <Accordion defaultOpen={true} icon="user-group" title="Gestión de Proveedores">
     - **Registro de Proveedores:**  
       Se ingresan datos comerciales y de contacto, además del tiempo estimado de entrega (lifetime).  
-      **[Insertar imagen: Pantalla de gestión de proveedores]**
+      
+      ![Gestión de proveedores](https://ruta.de/tu/imagen_proveedores.jpg)
   </Accordion>
 
-  <Accordion icon="user" title="Gestión de Profesionales y Clientes">
+  <Accordion defaultOpen={true} icon="user" title="Gestión de Profesionales y Clientes">
     - **Profesionales:**  
       Registro de roles y datos (médicos, enfermeros, etc.) para su asignación en la carga de insumos.
     
     - **Clientes:**  
       Configuración de facturación según el establecimiento (hospital, pabellón, etc.).  
-      **[Insertar imagen: Ejemplo de perfiles de profesionales y clientes]**
+      
+      ![Perfiles de profesionales y clientes](https://ruta.de/tu/imagen_profesionales.jpg)
   </Accordion>
 
-  <Accordion icon="layers" title="Categorías y Licitaciones">
+  <Accordion defaultOpen={true} icon="layers" title="Categorías y Licitaciones">
     - **Configuración de Insumos:**  
       Se asigna el nombre, categoría y precios de venta a cada insumo, permitiendo una clasificación precisa para la facturación y gestión interna.  
-      **[Insertar imagen: Pantalla de categorías o licitaciones]**
+      
+      ![Categorías y licitaciones](https://ruta.de/tu/imagen_categorias.jpg)
   </Accordion>
 </AccordionGroup>
 
@@ -175,25 +187,28 @@ El sistema **MED360** es una solución integral diseñada para gestionar de mane
 ## 7. Reportes y Auditoría
 
 <AccordionGroup>
-  <Accordion icon="history" title="Registro y Logs del Inventario">
+  <Accordion defaultOpen={true} icon="history" title="Registro y Logs del Inventario">
     - **Historial de Modificaciones:**  
       Se almacena información detallada sobre cada cambio en el inventario, incluyendo quién realizó la modificación y cuándo.  
-      **[Insertar imagen: Ejemplo de log o historial de cambios]**
+      
+      ![Historial de cambios](https://ruta.de/tu/imagen_logs.jpg)
   </Accordion>
 
-  <Accordion icon="export" title="Exportación de Datos">
+  <Accordion defaultOpen={true} icon="export" title="Exportación de Datos">
     - **Exportar a Excel:**  
       La mayoría de las tablas e informes permiten exportar los datos a Excel para análisis externo y auditorías.  
-      **[Insertar imagen: Opción de exportación a Excel]**
+      
+      ![Exportación a Excel](https://ruta.de/tu/imagen_excel.jpg)
   </Accordion>
 
-  <Accordion icon="report" title="Reportes de Prestaciones y Productos Implantables">
+  <Accordion defaultOpen={true} icon="report" title="Reportes de Prestaciones y Productos Implantables">
     - **Detalle del Procedimiento:**  
       Reportes que incluyen datos del paciente, producto, lote, modelo, proveedor y la guía de despacho asociada.  
-      **[Insertar imagen: Ejemplo de reporte de prestaciones]**
+      
+      ![Reporte de prestaciones](https://ruta.de/tu/imagen_reporte_prestaciones.jpg)
   </Accordion>
 
-  <Accordion icon="check-circle" title="Auditoría de Inventario">
+  <Accordion defaultOpen={true} icon="check-circle" title="Auditoría de Inventario">
     - **Proceso de Auditoría:**  
       Se realiza un escaneo completo de los productos en un pabellón, comparando el inventario físico con el registrado en el sistema para identificar mermas o inconsistencias.
     
@@ -204,7 +219,7 @@ El sistema **MED360** es una solución integral diseñada para gestionar de mane
       - Productos auditados y no encontrados
       - Registro de mermas detectadas
       
-      **[Insertar imagen: Pantalla o reporte de auditoría de inventario]**
+      ![Auditoría de inventario](https://ruta.de/tu/imagen_auditoria.jpg)
   </Accordion>
 </AccordionGroup>
 
@@ -213,7 +228,7 @@ El sistema **MED360** es una solución integral diseñada para gestionar de mane
 ## 8. Dashboard y Panel de Control
 
 <AccordionGroup>
-  <Accordion icon="dashboard" title="Dashboard y Panel de Control">
+  <Accordion defaultOpen={true} icon="dashboard" title="Dashboard y Panel de Control">
     El dashboard centraliza la información operativa y analítica del sistema.
     
     **Indicadores Clave:**
@@ -226,18 +241,8 @@ El sistema **MED360** es una solución integral diseñada para gestionar de mane
     **Personalización:**  
     Los usuarios pueden configurar el panel de control para visualizar los indicadores que consideren más relevantes para sus tareas diarias.
     
-    **[Insertar imagen: Ejemplo de dashboard con indicadores operativos]**
+    ![Dashboard](https://ruta.de/tu/imagen_dashboard.jpg)
   </Accordion>
 </AccordionGroup>
 
 ---
-
-## 9. Conclusión
-
-El sistema **MED360** está diseñado para ofrecer una solución completa y segura en la gestión de inventarios, cargas de insumos, reposiciones y auditorías. Su estructura modular permite adaptarse a las necesidades específicas de cada hospital o empresa, garantizando un control preciso y eficiente de los procesos operativos.
-
-Se recomienda revisar y actualizar este manual periódicamente para incorporar nuevas funcionalidades y mejoras.
-
-Para obtener soporte técnico o mayor información, comuníquese con el administrador del sistema o visite el centro de ayuda.
-
-**[Insertar imagen: Contacto y soporte técnico]**
