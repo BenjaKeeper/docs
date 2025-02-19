@@ -14,7 +14,7 @@ import { Accordion, AccordionGroup } from '@mintlify/components';
 
 El sistema **MED360** es una solución integral diseñada para gestionar de manera segura y eficiente los procesos operativos de inventario, cargas de insumos, reposiciones y auditorías. Implementado para VIA Inversiones y respaldado por AWS, este sistema garantiza altos estándares de seguridad y adaptabilidad para distintos entornos hospitalarios o empresariales.
 
-![Vista general del sistema MED360](https://ruta.de/tu/imagen_general.jpg)
+![Vista general del sistema MED360](/images/general.png)
 
 ---
 
@@ -27,12 +27,12 @@ El sistema **MED360** es una solución integral diseñada para gestionar de mane
     - **Autenticación con Usuario y Contraseña:**  
       Los usuarios deben ingresar sus credenciales asignadas para acceder al sistema.  
       
-      ![Pantalla de login con usuario y contraseña](https://ruta.de/tu/imagen_login.jpg)
+      ![Pantalla de login con usuario y contraseña](/images/login.png)
     
     - **Inicio de Sesión con Cuenta Google:**  
       Empresas con acceso a Gmail pueden ingresar de manera directa y simplificada mediante su cuenta Google.  
       
-      ![Opción de inicio de sesión con Google](https://ruta.de/tu/imagen_google.jpg)
+      ![Opción de inicio de sesión con Google](/images/google.png)
   </Accordion>
 
   <Accordion defaultOpen={true} icon="user" title="Registro y Asignación de Roles">
@@ -42,7 +42,7 @@ El sistema **MED360** es una solución integral diseñada para gestionar de mane
     - **Asignación de Roles:**  
       Tras el registro, se generan roles específicos (por ejemplo, administrador, usuario de pabellón) que determinan el nivel de acceso y las funciones disponibles en el sistema.  
       
-      ![Proceso de asignación de roles y perfil de usuario](https://ruta.de/tu/imagen_roles.jpg)
+      ![Proceso de asignación de roles y perfil de usuario](/images/registro.png)
   </Accordion>
 </AccordionGroup>
 
@@ -60,7 +60,7 @@ El sistema **MED360** es una solución integral diseñada para gestionar de mane
     - Stock mínimo de seguridad
     - Fecha de reposición
     
-    ![Pantalla principal de inventario](https://ruta.de/tu/imagen_inventario.jpg)
+    ![Pantalla principal de inventario](/images/general.png)
   </Accordion>
 
   <Accordion defaultOpen={true} icon="edit" title="Modificación y Registro de Cambios">
@@ -70,7 +70,7 @@ El sistema **MED360** es una solución integral diseñada para gestionar de mane
     - **Registro Detallado:**  
       Cada modificación se registra en el sistema (logs) para facilitar la trazabilidad y auditoría.  
       
-      ![Ejemplo de log o registro de cambios](https://ruta.de/tu/imagen_log.jpg)
+      ![Ejemplo de log o registro de cambios](/images/logs.png)
   </Accordion>
 
   <Accordion defaultOpen={true} icon="upload" title="Ingreso de Stock mediante Guías de Despacho">
@@ -86,7 +86,9 @@ El sistema **MED360** es una solución integral diseñada para gestionar de mane
     - **Validación y Guardado:**  
       El sistema valida la información (SKU, lote, UPN) y actualiza el inventario en tiempo real.  
       
-      ![Ingreso de productos mediante guía de despacho](https://ruta.de/tu/imagen_guia.jpg)
+      ![Pantalla principal Guías](/images/guias.png)
+      ![Formulario Guía](/images/dataguia.png)
+      ![Ingreso de productos mediante guía de despacho](/images/agregarproductoguia.png)
   </Accordion>
 </AccordionGroup>
 
@@ -108,12 +110,13 @@ El sistema **MED360** es una solución integral diseñada para gestionar de mane
     **Proceso de Registro:**  
     Se puede ingresar el producto mediante escaneo o búsqueda manual, y asociarlo automáticamente al paciente.  
       
-    ![Formulario de carga de insumos](https://ruta.de/tu/imagen_carga_insumos.jpg)
+    ![Formulario de carga de insumos](/images/formcarga.png)
+    ![Formulario de carga de insumos](/images/agregarproducto.png)
     
     **Generación de Reportes:**  
     Una vez guardado el registro, se genera un reporte detallado de costos y consumo de insumo para su posterior análisis.  
       
-    ![Reporte de carga de insumo](https://ruta.de/tu/imagen_reporte.jpg)
+    ![Pantalla cargas de insumo](/images/cargainsumo.png)
   </Accordion>
 </AccordionGroup>
 
@@ -131,7 +134,7 @@ El sistema **MED360** es una solución integral diseñada para gestionar de mane
     - **Solicitud al Proveedor:**  
       Se envía una notificación o solicitud directa al proveedor para la reposición del producto.
       
-    ![Reposiciones](https://ruta.de/tu/imagen_reposiciones.jpg)
+    ![Reposiciones](/images/reposiciones.png)
   </Accordion>
 </AccordionGroup>
 
@@ -141,27 +144,31 @@ El sistema **MED360** es una solución integral diseñada para gestionar de mane
 
 <AccordionGroup>
   <Accordion defaultOpen={true} icon="database" title="Maestro de Productos">
+    ![Navegador](/images/navbar.png)
     - **Creación y Edición de Productos:**  
+    
       Permite ingresar datos fundamentales como el nombre del insumo, grupo (licitación, consignado), medidas, costo neto y otros identificadores (CFN, UPN).  
       
-      ![Ingreso de un nuevo producto](https://ruta.de/tu/imagen_nuevo_producto.jpg)
+      ![Maestro Productos](/images/mproductos.png)
+      ![Ingreso de un nuevo producto](/images/agregarmproducto.png)
   </Accordion>
 
-  <Accordion defaultOpen={true} icon="barcode" title="Maestro de CKUs">
-    - **Generación de CKUs:**  
-      Para productos que requieren seguimiento especial, se pueden generar CKUs (Códigos de Kilo Unidad) que facilitan la gestión y el control.
+  <Accordion defaultOpen={true} icon="barcode" title="Maestro de SKUs">
+    - **Generación de SKUs:**  
+      Para productos que requieren seguimiento especial, se pueden generar SKUs que facilitan la gestión y el control en estandar GTIN (GS1).
     
     - **Impresión y Exportación:**  
-      Los CKUs pueden descargarse en formato imprimible para su uso físico.  
+      Los SKUs pueden descargarse en formato imprimible para su uso físico.  
       
-      ![Ejemplo de CKU generado](https://ruta.de/tu/imagen_cku.jpg)
+      ![Pantalla SKUs](/images/mskus.png)
   </Accordion>
 
   <Accordion defaultOpen={true} icon="user-group" title="Gestión de Proveedores">
     - **Registro de Proveedores:**  
       Se ingresan datos comerciales y de contacto, además del tiempo estimado de entrega (lifetime).  
       
-      ![Gestión de proveedores](https://ruta.de/tu/imagen_proveedores.jpg)
+      ![Gestión de proveedores](/images/mproveedores.png)
+      ![Agregar Proveedor](/images/agregarproveedor.png)
   </Accordion>
 
   <Accordion defaultOpen={true} icon="user" title="Gestión de Profesionales y Clientes">
